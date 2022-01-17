@@ -1,9 +1,9 @@
 <template>
   <form @submit.prevent>
     <h4>Create post</h4>
-    <my-input v-model="post.title" placeholder="Name" />
-    <my-input v-model="post.body" placeholder="Body" />
-    <MyButton @click="createPost()" class="btn">Create</MyButton>
+    <my-input v-model="post.title" type="text" placeholder="Name" />
+    <my-input v-model="post.body" type="text" placeholder="Body" />
+    <my-button @click="createPost()" class="btn">Create</my-button>
   </form>
 </template>
 
